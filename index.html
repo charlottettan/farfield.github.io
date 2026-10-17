@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farfield | The Last Mile of AI Observability</title>
+  <title>Farfield | Operational Observability for AI Agents</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,6 @@
   <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 px-6 py-4">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
       <div class="text-xl font-bold tracking-tight text-white flex items-center gap-3">
-        <!-- Farfield Logo -->
         <svg class="w-7 h-7 shrink-0" viewBox="0 0 512 512">
           <circle cx="256" cy="256" r="72" fill="#f1f5f9" />
           <circle cx="256" cy="256" r="44" fill="#0f141c" />
@@ -28,9 +27,9 @@
         </svg>
         Farfield
       </div>
-      <button 
-        data-tally-open="o965yb" 
-        data-tally-layout="modal" 
+      <button
+        data-tally-open="o965yb"
+        data-tally-layout="modal"
         data-tally-width="500"
         class="text-sm font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-2 rounded-lg transition cursor-pointer">
         Request Early Access
@@ -40,21 +39,25 @@
 
   <main class="max-w-4xl mx-auto px-6 py-16 space-y-28">
 
-    <!-- Hero / Positioning -->
+    <!-- Hero -->
     <section class="text-center pt-8">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-6">
-        The Last Mile of AI Observability
+        Operational Observability for AI Agents
       </div>
       <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-        The best signals to assess AI failure come from the <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-sky-400">least technical employees.</span>
+        The best signals for improving AI come from your
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-sky-400">least technical employees.</span>
       </h1>
       <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        Farfield captures the manual corrections employees make after agent runs, turning invisible rework into the telemetry companies need to measure and improve AI in production.
+        Every agent observability tool stops when the run completes.
+        Farfield starts there — following output into the tools employees
+        actually work in to capture what gets fixed before the work is
+        truly done.
       </p>
       <div class="mt-8 flex justify-center">
-        <button 
-          data-tally-open="o965yb" 
-          data-tally-layout="modal" 
+        <button
+          data-tally-open="o965yb"
+          data-tally-layout="modal"
           data-tally-width="500"
           class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-8 py-3.5 rounded-lg transition text-base shadow-lg shadow-indigo-500/25 cursor-pointer">
           Request Early Access
@@ -62,66 +65,44 @@
       </div>
     </section>
 
-    <!-- Section 1 — The Problem -->
+    <!-- Section 1 — The Claim -->
     <section class="border-t border-slate-800/80 pt-16 space-y-6">
-      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">01 / The Problem</h2>
+      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">01 / The Claim</h2>
+      <h3 class="text-2xl sm:text-3xl font-bold text-white">
+        The industry is looking at the wrong signal.
+      </h3>
       <div class="space-y-4 text-slate-300 text-lg leading-relaxed max-w-3xl">
         <p>
-          AI agents have arrived on the operations floor. Every day, analysts, coordinators, and associates prompt internal tools to review documents, draft vendor communications, and reconcile records. But when the agent's output is slightly wrong, off-tone, or missing a mandatory clause, nobody files a bug ticket.
+          Every eval, trust score, and LLM judge measures agents against
+          criteria someone on a technical team decided mattered in advance.
+          Those criteria catch the failures engineers anticipated.
         </p>
         <p>
-          Instead, the employee highlights the error, rewrites it by hand, and hits send. It takes 90 seconds. It happens forty times a day across every department. The agent run was technically marked as "successful" in IT logs, yet human labor quietly absorbed the failure.
+          The failures that actually cost organizations money are the ones
+          nobody anticipated — the ones only visible when a compliance
+          analyst, procurement coordinator, or operations associate runs
+          into something the agent consistently gets wrong. That failure
+          never throws an exception. It never becomes a ticket. It shows
+          up as a person quietly rewriting the same section of every
+          agent-generated document for weeks, because the agent never
+          learned what she knows.
         </p>
         <p>
-          Because none of these corrections are captured, the loop never closes. The same mistake happens tomorrow, the next week, and across fifty other desks—a compounding silent tax on your entire organization.
+          She is the eval. She has been running it every day. Nobody
+          captured a single result.
         </p>
       </div>
-    </section>
 
-    <!-- Section 2 — What Farfield Does -->
-    <section class="border-t border-slate-800/80 pt-16 space-y-10">
-      <div>
-        <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">02 / What Farfield Does</h2>
-        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">Closing the operational loop in four steps</h3>
-      </div>
-
-      <!-- 4 Step Diagram -->
-      <div class="grid sm:grid-cols-4 gap-4">
-        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
-          <div class="text-xs font-mono text-indigo-400 mb-2">STEP 01</div>
-          <div class="text-lg font-semibold text-white mb-2">Capture</div>
-          <p class="text-sm text-slate-400 leading-normal">
-            Passively logs the manual interventions, inline edits, and diffs employees make after every agent run.
-          </p>
-        </div>
-        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
-          <div class="text-xs font-mono text-indigo-400 mb-2">STEP 02</div>
-          <div class="text-lg font-semibold text-white mb-2">Diagnose</div>
-          <p class="text-sm text-slate-400 leading-normal">
-            Clusters unrecorded fixes to surface the exact root causes behind persistent model breakdowns.
-          </p>
-        </div>
-        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
-          <div class="text-xs font-mono text-indigo-400 mb-2">STEP 03</div>
-          <div class="text-lg font-semibold text-white mb-2">Prioritize</div>
-          <p class="text-sm text-slate-400 leading-normal">
-            Ranks failure modes by wasted operator hours and dollar impact so teams know what to solve first.
-          </p>
-        </div>
-        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
-          <div class="text-xs font-mono text-indigo-400 mb-2">STEP 04</div>
-          <div class="text-lg font-semibold text-white mb-2">Improve</div>
-          <p class="text-sm text-slate-400 leading-normal">
-            Translates natural-language operational fixes directly into updated agent and skill files for the fleet.
-          </p>
-        </div>
-      </div>
-
-      <!-- McKinsey Stat Callout -->
-      <div class="p-6 rounded-xl border border-indigo-500/30 bg-indigo-950/20 text-center sm:text-left sm:flex items-center justify-between gap-6">
+      <!-- Dividing line stat -->
+      <div class="p-6 rounded-xl border border-indigo-500/30 bg-indigo-950/20 sm:flex items-center justify-between gap-6 text-center sm:text-left">
         <div>
-          <div class="text-2xl sm:text-3xl font-extrabold text-white">70–75% of variable agent run cost</div>
-          <p class="text-sm text-slate-400 mt-1">is driven by human oversight and manual rework. Tokens account for only 20–25%.</p>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white">
+            70–75% of variable agent run cost
+          </div>
+          <p class="text-sm text-slate-400 mt-1">
+            is human oversight and manual rework. Tokens are 20–25%.
+            The industry measures tokens.
+          </p>
         </div>
         <div class="mt-4 sm:mt-0 shrink-0 text-xs font-mono text-indigo-300 uppercase tracking-wider">
           McKinsey QuantumBlack
@@ -129,12 +110,127 @@
       </div>
     </section>
 
-    <!-- Section 3 — The Concrete Example -->
+    <!-- Section 2 — Where Farfield Sits -->
+    <section class="border-t border-slate-800/80 pt-16 space-y-8">
+      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">02 / Where Farfield Sits</h2>
+      <h3 class="text-2xl sm:text-3xl font-bold text-white">
+        The agent stack ends at output. Farfield begins there.
+      </h3>
+
+      <!-- Stack diagram -->
+      <div class="space-y-2">
+
+        <div class="p-4 rounded-xl border border-slate-700 bg-slate-900/40 flex items-center gap-4">
+          <div class="w-2 h-10 rounded-full bg-slate-600 shrink-0"></div>
+          <div>
+            <div class="text-sm font-semibold text-slate-300">Model &amp; Inference Layer</div>
+            <div class="text-xs text-slate-500 mt-0.5">Token usage, latency, error codes — covered by existing infra tooling</div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl border border-slate-700 bg-slate-900/40 flex items-center gap-4">
+          <div class="w-2 h-10 rounded-full bg-slate-600 shrink-0"></div>
+          <div>
+            <div class="text-sm font-semibold text-slate-300">Agent Execution Layer</div>
+            <div class="text-xs text-slate-500 mt-0.5">Tool calls, traces, span trees — covered by Raindrop, LangSmith, Arize</div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl border border-slate-700 bg-slate-900/40 flex items-center gap-4">
+          <div class="w-2 h-10 rounded-full bg-slate-600 shrink-0"></div>
+          <div>
+            <div class="text-sm font-semibold text-slate-300">Output &amp; Eval Layer</div>
+            <div class="text-xs text-slate-500 mt-0.5">Groundedness, faithfulness, rubric scoring — covered by Judgment Labs, Collibra</div>
+          </div>
+        </div>
+
+        <!-- Farfield row — highlighted -->
+        <div class="p-4 rounded-xl border border-indigo-500/50 bg-indigo-950/30 flex items-center gap-4">
+          <div class="w-2 h-10 rounded-full bg-indigo-400 shrink-0"></div>
+          <div class="flex-1">
+            <div class="text-sm font-semibold text-white flex items-center gap-2">
+              Human Interaction Layer
+              <span class="text-xs font-mono px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Farfield</span>
+            </div>
+            <div class="text-xs text-slate-400 mt-0.5">
+              What employees change in Word, Excel, and email after the agent run —
+              currently unobserved by every tool above
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Everything above the human interaction layer assumes the agent run
+        is the last event worth measuring. Farfield is built on the
+        observation that the most important event often happens after the
+        run — when a real employee decides whether the output was actually
+        usable.
+      </p>
+    </section>
+
+    <!-- Section 3 — What Farfield Does -->
+    <section class="border-t border-slate-800/80 pt-16 space-y-10">
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">03 / What Farfield Does</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">
+          From correction to improvement, automatically.
+        </h3>
+      </div>
+
+      <div class="grid sm:grid-cols-4 gap-4">
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
+          <div class="text-xs font-mono text-indigo-400 mb-2">01</div>
+          <div class="text-lg font-semibold text-white mb-2">Capture</div>
+          <p class="text-sm text-slate-400 leading-normal">
+            Passively logs employee edits and interventions after every
+            agent run — no tickets, no tagging, no engineering effort.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
+          <div class="text-xs font-mono text-indigo-400 mb-2">02</div>
+          <div class="text-lg font-semibold text-white mb-2">Diagnose</div>
+          <p class="text-sm text-slate-400 leading-normal">
+            Surfaces recurring patterns across employees and tasks.
+            Individual corrections are logged. Patterns generate
+            candidate explanations with supporting evidence.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
+          <div class="text-xs font-mono text-indigo-400 mb-2">03</div>
+          <div class="text-lg font-semibold text-white mb-2">Prioritize</div>
+          <p class="text-sm text-slate-400 leading-normal">
+            Ranks failure patterns by employee hours and dollar cost.
+            Engineers get actionable items in the tools they already
+            use, not a file to check manually.
+          </p>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/40">
+          <div class="text-xs font-mono text-indigo-400 mb-2">04</div>
+          <div class="text-lg font-semibold text-white mb-2">Improve</div>
+          <p class="text-sm text-slate-400 leading-normal">
+            Approved fixes go into a staged rollout. If the correction
+            pattern decreases, the update rolls out fleet-wide. One fix,
+            everywhere.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Concrete Example -->
     <section class="border-t border-slate-800/80 pt-16 space-y-8">
       <div>
-        <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">03 / The Concrete Example</h2>
-        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">The Trade Confirmation Workflow</h3>
-        <p class="text-slate-400 text-sm mt-1">How silent errors scale across operations desks without telemetry.</p>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">04 / In Practice</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">
+          A run marked "successful." 21 hours of invisible labor.
+        </h3>
+        <p class="text-slate-400 text-sm mt-2">
+          A trade-confirmation agent handles 500 confirmations per day.
+          A counterparty changes its document format. Ten employees begin
+          manually correcting the same field. Existing monitoring shows
+          no technical error.
+        </p>
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -144,90 +240,135 @@
         </div>
         <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/60 text-center">
           <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400">21 hrs</div>
-          <div class="text-xs text-slate-400 uppercase tracking-wide mt-1">Employee Time Lost</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wide mt-1">Employee Time</div>
         </div>
         <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/60 text-center">
           <div class="text-3xl sm:text-4xl font-extrabold text-white">74%</div>
-          <div class="text-xs text-slate-400 uppercase tracking-wide mt-1">Traced to One Issue</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wide mt-1">One Root Cause</div>
         </div>
         <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/60 text-center">
           <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">Fixed Once</div>
-          <div class="text-xs text-slate-400 uppercase tracking-wide mt-1">Shared Fleet Resolution</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wide mt-1">Fleet-Wide</div>
         </div>
       </div>
 
-      <p class="text-slate-300 text-sm leading-relaxed">
-        Across one institutional desk, an agent drafted daily settlement confirmation notices. Over three weeks, operators manually corrected 183 drafts—eating 21 analyst hours. Farfield clustered the corrections to reveal that 74% stemmed from a single omitted settlement-window parameter. One prompt/skill file patch resolved the issue for the entire floor permanently.
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Without Farfield, those 21 hours repeat every week until someone
+        escalates loudly enough for an engineer to investigate. The agent
+        monitoring stack showed a clean run every time.
       </p>
     </section>
 
-    <!-- Section 4 — Who It's For -->
+    <!-- Section 5 — Who It's For -->
     <section class="border-t border-slate-800/80 pt-16 space-y-8">
       <div>
-        <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">04 / Who It's For</h2>
-        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">Targeted accountability for enterprise leaders</h3>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">05 / Who It's For</h2>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">
+          Built for the people responsible for what agents actually produce.
+        </h3>
+        <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+          An operations analyst working alongside an agent will not know
+          whether to modify a system prompt, whether a tool is broken, or
+          whether another employee already discovered the same problem.
+          They will fix the result and move on. Farfield makes those
+          corrections useful without requiring every employee to become
+          an agent engineer.
+        </p>
       </div>
 
       <div class="space-y-3">
         <div class="p-4 rounded-lg border border-slate-800 bg-slate-900/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span class="font-semibold text-white text-base">COO</span>
-          <span class="text-sm text-slate-400">"I need to know if deployed AI is actually saving floor hours or just shifting labor into unmeasured review."</span>
+          <span class="font-semibold text-white text-base shrink-0">COO</span>
+          <span class="text-sm text-slate-400">"I need to know if deployed AI is actually saving floor hours or quietly shifting labor into unmeasured rework."</span>
         </div>
         <div class="p-4 rounded-lg border border-slate-800 bg-slate-900/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span class="font-semibold text-white text-base">Head of Operations</span>
-          <span class="text-sm text-slate-400">"My team spends hours patching the same agent errors every week, but has no technical way to push fixes back."</span>
+          <span class="font-semibold text-white text-base shrink-0">Head of Operations</span>
+          <span class="text-sm text-slate-400">"My team patches the same agent errors every week and has no way to push those fixes back into the system."</span>
         </div>
         <div class="p-4 rounded-lg border border-slate-800 bg-slate-900/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span class="font-semibold text-white text-base">Head of Automation</span>
-          <span class="text-sm text-slate-400">"We can't tell which agent pipelines deliver genuine ROI versus which ones require constant human life support."</span>
+          <span class="font-semibold text-white text-base shrink-0">Head of Automation</span>
+          <span class="text-sm text-slate-400">"We can't tell which agent pipelines deliver real ROI versus which ones require constant human life support."</span>
         </div>
         <div class="p-4 rounded-lg border border-slate-800 bg-slate-900/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span class="font-semibold text-white text-base">Chief AI Officer</span>
-          <span class="text-sm text-slate-400">"Our dashboards show latency and API uptime, but we have zero observability into ground-truth output accuracy on the floor."</span>
+          <span class="font-semibold text-white text-base shrink-0">Chief AI Officer</span>
+          <span class="text-sm text-slate-400">"Our dashboards show latency and uptime. We have zero observability into output accuracy on the actual floor."</span>
         </div>
       </div>
     </section>
 
-    <!-- Section 5 — Why Now -->
+    <!-- Section 6 — Why Now -->
     <section class="border-t border-slate-800/80 pt-16 space-y-6">
-      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">05 / Why Now</h2>
-      <h3 class="text-2xl sm:text-3xl font-bold text-white">The shift to non-technical operators</h3>
-      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
-        The first wave of AI tooling was used by software engineers who understood system prompts, had repo access, and could hotfix their own tools. The current wave is deploying across operations, procurement, accounting, and legal. 
-      </p>
-      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
-        These operators are domain experts, but they will never open an agent config file or file an internal IT ticket. Without an automated capture and translation layer, every operational mistake disappears into manual work—leaving enterprise agents permanently stagnant.
-      </p>
+      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">06 / Why Now</h2>
+      <h3 class="text-2xl sm:text-3xl font-bold text-white">
+        The people supervising agents are changing faster than the tooling.
+      </h3>
+      <div class="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+        <p>
+          The first wave of AI deployment landed with engineering teams
+          who understood system prompts, had repo access, and could
+          hotfix their own tools. That population is a shrinking share
+          of total agent users.
+        </p>
+        <p>
+          Agents are now running inside operations, procurement,
+          compliance, and finance. The people supervising them are domain
+          experts who will never open an agent config file. When something
+          goes wrong, they fix the output and move on. Every correction
+          disappears. Every lesson evaporates.
+        </p>
+        <p>
+          The further agents spread from technical teams, the larger the
+          gap between what agents produce and what employees actually need
+          — and the more of that gap gets absorbed silently as invisible
+          human labor. Farfield is the instrumentation layer for that gap.
+        </p>
+      </div>
     </section>
 
-    <!-- Section 6 — Founder Note -->
+    <!-- Section 7 — Founder Note -->
     <section class="border-t border-slate-800/80 pt-16 space-y-6">
-      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">06 / Founder Note</h2>
+      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">07 / Founder Note</h2>
       <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed">
         <p>
-          This summer while working at Goldman Sachs, we were expected and encouraged to use internal AI tooling daily. The intent was clear, but the reality on the desk was frustrating: the models kept tripping over the exact same domain quirks, outputs never improved over time, and non-technical analysts had zero mechanisms to fix them. You just swallowed the extra work, retyped the output, and moved on.
+          This summer at Goldman Sachs, we were expected and encouraged
+          to use internal AI tooling daily. The intent was clear. The
+          reality on the desk was different: agents kept tripping over
+          the same domain-specific quirks, outputs never improved over
+          time, and non-technical analysts had no mechanism to do
+          anything about it. You swallowed the extra work, rewrote the
+          output, and moved on.
         </p>
         <p>
-          Between our time seeing operations across Goldman and quantitative environments like Citadel, the gap became obvious. Enterprise IT builds the infrastructure to run models safely inside firewalls, but no one is capturing what happens when those models hit the real floor. We built Farfield to give operational teams a voice in model performance and finally close the loop.
+          Between Goldman and Citadel, the gap became obvious. Enterprise
+          IT builds the infrastructure to run models safely. Nobody is
+          capturing what happens when those models hit the actual floor.
+          Farfield gives operational teams a voice in model performance
+          and closes the loop that every other tool leaves open.
         </p>
         <div class="pt-2 text-sm font-semibold text-white">
-          — Belle & Charlotte, Founders of Farfield
+          — Belle &amp; Charlotte, Founders of Farfield
         </div>
       </div>
     </section>
 
-    <!-- Section 7 — Early Access / Waitlist -->
+    <!-- Section 8 — Early Access -->
     <section class="border-t border-slate-800/80 pt-16 text-center space-y-6">
-      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">07 / Early Access</h2>
-      <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Measure and fix your enterprise agent fleet.</h3>
+      <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">08 / Early Access</h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+        Find out what your agents are actually costing your team.
+      </h3>
       <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
-        Join operations and automation leaders piloting Farfield. We'll show you exactly how many hours your teams lose to silent AI rework.
+        We are working with a small group of operations and automation
+        leaders to pilot Farfield on a single high-volume workflow.
+        The first 30 days produce a concrete picture of correction
+        volume, failure categories, and time cost — regardless of what
+        you decide to do next.
       </p>
       <div>
-        <button 
-          data-tally-open="o965yb" 
-          data-tally-layout="modal" 
-          data-tally-width="500" 
+        <button
+          data-tally-open="o965yb"
+          data-tally-layout="modal"
+          data-tally-width="500"
           data-tally-auto-close="2000"
           class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-8 py-3.5 rounded-lg transition text-base shadow-lg shadow-indigo-500/25 cursor-pointer">
           Request Pilot Access
@@ -240,7 +381,7 @@
   <!-- Footer -->
   <footer class="border-t border-slate-800/80 py-10 mt-20 text-xs text-slate-500">
     <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>&copy; 2026 Farfield Systems, Inc.</div>
+      <div>&copy; 2025 Farfield Systems, Inc.</div>
       <div class="flex items-center gap-6">
         <a href="mailto:contact@farfield.ai" class="hover:text-slate-300 transition">contact@farfield.ai</a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition">LinkedIn</a>
@@ -248,7 +389,6 @@
     </div>
   </footer>
 
-  <!-- Tally Modal Script -->
   <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
